@@ -10,7 +10,7 @@ pipe = load(model_p)
 
 text = " ".join(sys.argv[1:]).strip()
 if not text:
-    print("Usage: python src/score.py "your review text""); sys.exit(1)
+    print('Usage: python src/score.py "your review text"'); sys.exit(1)
 
 X = pd.DataFrame([{"content":text, "brand":"JBL"}])
 proba = pipe.predict_proba(X)[:,1][0]
