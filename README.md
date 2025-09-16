@@ -19,3 +19,9 @@ python src/train.py
 ```bash
 python src/score.py "audio cuts out on subway and battery dies after 2 hours"
 ```
+## Usage
+Train the models:
+python3 src/train.py
+
+Score a review:
+python3 src/score.py "These headphones broke in a week"
